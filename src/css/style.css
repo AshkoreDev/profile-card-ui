@@ -44,3 +44,107 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+/*CARD*/
+.card {
+	width: 300px;
+	padding: 1.25rem 2rem 3rem;
+	text-align: center;
+	position: relative;
+	border-radius: 1.5rem;
+	background-color: var(--black-color);
+	box-shadow: 0 4px 16px hsla(29, 75%, 8%, .2);
+}
+
+.card--border {
+	width: 140px;
+	height: 140px;
+	margin: 0 auto .75rem;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	border: 2px solid var(--primary-color);
+}
+
+.card--img {
+	width: 125px;
+	border-radius: inherit;
+}
+
+.card--name {
+	color: var(--primary-color);
+	font-weight: 500;
+	font-size: var(--font--lg);
+}
+
+.card--profession {
+	color: var(--text-color);
+	font-weight: 500;
+}
+
+.card__social {
+	width: 250px;
+	margin: 0 auto;
+	padding: .85rem;
+	text-align: initial;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1.75rem;
+	border-radius: 3rem;
+	background-color: var(--primary-color);
+	box-shadow: 0 8px 24px hsla(29, 75%, 56%, .3);
+	overflow: hidden;
+	transform-origin: 18px 17px;
+}
+
+.card__social--control {
+	position: relative;
+	transform: rotate(0);
+	transform-origin: 18px 18px;
+	transition: transform .45s ease;
+}
+
+.card__social--toggle {
+	padding: .5rem;
+	font-size: 1.25rem;
+	color: var(--primary-color);
+	display: inline-flex;
+	position: relative;
+	z-index: 10;
+	border-radius: 50%;
+	background-color: var(--black-color);
+}
+
+.card__social--text {
+	font-weight: 500;
+	font-size: var(--font--md);
+	color: var(--black-color);
+	display: block;
+	top: .5rem;
+}
+
+.card__social--list {
+	display: inline-flex;
+	column-gap: 1.4rem;
+	transform: rotate(135deg);
+	transform-origin: 18px 17px;
+}
+
+.card__social--link {
+	padding: 8px;
+	font-size: 1.25rem;
+	color: var(--black-color);
+	border-radius: 50%;
+	display: inline-flex;
+	background-color: var(--primary-light-color);
+}
+
+.card__social--text,
+.card__social--list {
+	padding-left: 3.1rem;
+	position: absolute;
+	/*top: 0;*/
+	left: 0;
+	right: 0;
+}
